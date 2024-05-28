@@ -40,32 +40,35 @@ html {
 
 h1 {
   font-weight: 700;
-  font-size: 1.875em;
-  margin-bottom: 0.625em;
+  font-size: 1.875rem;
+  margin-bottom: 0.625rem;
   line-height: 2.25rem;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.75rem;
-  margin-bottom: 0.938em;
+  margin-bottom: 0.938rem;
 }
 
 p {
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.25rem;
   line-height: 20px;
   margin: 0;
-  opacity: 0.8;
   letter-spacing: 0.5px;
 }
 
+.text-opacity p {
+  opacity: 0.8;
+}
+
 .subscription h2 {
-  font-size: 2.188em;
+  font-size: 2.188rem;
   line-height: 2.688rem;
-  margin-bottom: 0.625em;
+  margin-bottom: 0.625rem;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -79,6 +82,23 @@ p {
 
 .subscription-box span {
   font-weight: 700;
-  font-size: 1.5em;
-  margin-top: 0.313em;
+  font-size: 1.5rem;
+  margin-top: 0.313rem;
+}
+
+.subscription-wrap p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 125%;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+}
+
+.section.section-movie::before {
+  z-index: 2;
+}
+
+.section-movie > div {
+  vertical-align: bottom;
 }

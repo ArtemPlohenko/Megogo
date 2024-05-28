@@ -11,9 +11,13 @@
   background-repeat: no-repeat;
 }
 
+.subscription > div {
+  vertical-align: bottom;
+  padding-bottom: 70px;
+}
+
 .subscription-background {
-  background-size: auto;
-  /* background-size: cover; */
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -51,7 +55,7 @@
   max-width: 200px;
   padding: 21px 57px;
   font-weight: 600;
-  font-size: 0.688em;
+  font-size: 0.688rem;
   color: var(--body-color);
   background-color: var(--primary-color);
   border: none;
@@ -60,6 +64,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: var(--tran-04);
+  margin-bottom: 0.625rem;
 }
 
 .btn:hover {
@@ -70,18 +75,46 @@
   background-color: var(--primary-color-active);
 }
 
+.small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.833333px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.25rem;
+}
+
+.btn-link {
+  display: inline-block;
+  color: var(--body-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  transition: var(--tran-04);
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
 /* ===== MEDIA ===== */
 @media only screen and (min-width: 375px) {
 }
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
