@@ -1,0 +1,84 @@
+/* ===== FONTS ===== */
+@font-face {
+  font-family: "sf_ui_displayregular";
+  src: url("../fonts/sf-ui-display-regular-webfont.woff") format("woff2"),
+    url("../fonts/sf-ui-display-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "sf_ui_displayregular", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.5px;
+}
+
+:root {
+  /* ===== COLOR ===== */
+  --body-color: #fff;
+  --body-background: #101010;
+  --primary-color: #23c3b2;
+  --primary-color-light: #1b988b;
+  --primary-color-active: #136c63;
+
+  /* ===== TRANSITION ===== */
+  --tran-04: all 0.4s ease;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.left {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.875em;
+  margin-bottom: 0.625em;
+  line-height: 2.25rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.75rem;
+  margin-bottom: 0.938em;
+}
+
+p {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.25rem;
+  line-height: 20px;
+  margin: 0;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+
+.subscription h2 {
+  font-size: 2.188em;
+  line-height: 2.688rem;
+  margin-bottom: 0.625em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subscription-box {
+  position: absolute;
+  left: 50px;
+  top: 36px;
+}
+
+.subscription-box span {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 0.313em;
+}

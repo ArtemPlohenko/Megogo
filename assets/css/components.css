@@ -1,0 +1,87 @@
+.container {
+  position: relative;
+  padding: 0 3.125rem;
+  z-index: 1;
+  text-align: left;
+}
+
+.subscription {
+  background-image: url("../../assets/images/content.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscription-background {
+  background-size: auto;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.subscription::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 8px solid var(--primary-color);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 406px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 200px;
+  padding: 21px 57px;
+  font-weight: 600;
+  font-size: 0.688em;
+  color: var(--body-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--tran-04);
+}
+
+.btn:hover {
+  background-color: var(--primary-color-light);
+}
+
+.btn:active {
+  background-color: var(--primary-color-active);
+}
+
+/* ===== MEDIA ===== */
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
