@@ -67,6 +67,10 @@
   margin-bottom: 0.625rem;
 }
 
+.btn.btn_big {
+  font-size: 0.813rem;
+}
+
 .btn:hover {
   background-color: var(--primary-color-light);
 }
