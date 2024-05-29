@@ -1,10 +1,40 @@
-/* ===== FONTS ===== */
 @font-face {
   font-family: "sf_ui_displayregular";
   src: url("../fonts/sf-ui-display-regular-webfont.woff") format("woff2"),
     url("../fonts/sf-ui-display-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("f../onts/icomoon.eot?lzqfry");
+  src: url("../fonts/icomoon.eot?lzqfry#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?lzqfry") format("truetype"), url("../fonts/icomoon.woff?lzqfry") format("woff"),
+    url("../fonts/icomoon.svg?lzqfry#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-down:before {
+  content: "\e905";
 }
 
 * {
@@ -17,14 +47,11 @@
 }
 
 :root {
-  /* ===== COLOR ===== */
   --body-color: #fff;
   --body-background: #101010;
   --primary-color: #23c3b2;
   --primary-color-light: #1b988b;
   --primary-color-active: #136c63;
-
-  /* ===== TRANSITION ===== */
   --tran-04: all 0.4s ease;
 }
 
@@ -38,110 +65,49 @@ body {
   background-color: var(--body-background);
 }
 
-.left {
-  text-align: left;
-  margin-bottom: 2.5rem;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 1.875rem;
-  margin-bottom: 0.625rem;
-  line-height: 2.25rem;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  margin-bottom: 0.938rem;
-}
-
-p {
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  line-height: 20px;
-  margin: 0;
-  letter-spacing: 0.5px;
-}
-
 .text-opacity p {
   opacity: 0.8;
 }
 
-.subscription h2 {
-  font-size: 2.188rem;
-  line-height: 2.688rem;
-  margin-bottom: 0.625rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.833333px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.25rem;
 }
 
-.subscription-box {
+.scroll-btn {
   position: absolute;
-  left: 50px;
-  top: 36px;
-}
-
-.subscription-box span {
-  font-weight: 700;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  padding: 10px;
   font-size: 1.5rem;
-  margin-top: 0.313rem;
+  color: var(--body-color);
+  border: none;
+  cursor: pointer;
+  transition: var(--tran-04);
 }
 
-.subscription .container p {
-  max-width: 259px;
+@media only screen and (max-height: 680px) {
+  .section {
+    padding: 1rem 0 0;
+  }
 }
 
-.subscription-wrap p {
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 125%;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  margin-bottom: 1rem;
-}
-
-.section.section-movie::before {
-  z-index: 2;
-}
-
-.section-movie > div,
-.partners > div {
-  vertical-align: bottom;
-}
-
-.partners .left {
-  margin-bottom: 0.563rem;
-}
-
-.connection .left {
-  margin-bottom: 1.875rem;
-}
-
-.subscription-connect {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.subscription-connect li {
-  width: 48%;
-  padding-right: 0.5rem;
-  margin-bottom: 2.5rem;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 110%;
-}
-
-.subscription-connect span {
-  font-weight: normal;
-  font-size: 0.938rem;
-  display: inline-block;
-  line-height: 100%;
-}
-
-.subscription-connect .btn {
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
 }

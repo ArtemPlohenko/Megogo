@@ -14,3 +14,62 @@
   width: 100%;
   position: relative;
 }
+
+.container {
+  position: relative;
+  padding: 0 3.125rem;
+  z-index: 1;
+  text-align: left;
+}
+
+.left {
+  margin-bottom: 1.875rem;
+}
+
+.subscription {
+  background-image: url("../../assets/images/content.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscription > div {
+  vertical-align: bottom;
+  padding-bottom: 70px;
+}
+
+.subscription__background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.subscription::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 8px solid var(--primary-color);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 406px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+}
+
+.section-movie > div,
+.partners > div {
+  vertical-align: bottom;
+}

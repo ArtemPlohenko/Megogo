@@ -4,4 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fitToSection: true,
     scrollHorizontally: true,
   });
+
+  document.getElementById("scroll-btn").addEventListener("click", function () {
+    fullpage_api.moveSectionDown();
+  });
 });
